@@ -1,7 +1,7 @@
 package com.iw.fsaapi.adapter;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.iw.fsaapi.response.Establishment;
+import com.iw.fsaapi.response.Authority;
 import org.apache.commons.io.FileUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -13,7 +13,6 @@ import org.springframework.http.ResponseEntity;
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
-import java.util.List;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -21,35 +20,35 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
-public class EstablishmentsResponseToEstablishmentsTest {
-
+public class AuthorityResponseToAuthorityTest {
     @Spy
     private ObjectMapper objectMapper;
 
     @InjectMocks
-    private EstablishmentsResponseToEstablishments establishmentsResponseToEstablishments;
+    private AuthorityResponseToAuthority authorityResponseToAuthority;
 
     @Test
-    public void shouldReturnAListOfEstablishments() throws Exception {
+    public void shouldReturnAnAuthority() throws Exception {
         //arrange
         final ResponseEntity<String> responseEntity = mock(ResponseEntity.class);
-        when(responseEntity.getBody()).thenReturn(getFileContent("establishmentsResponse.json"));
+        when(responseEntity.getBody()).thenReturn(getFileContent("authorityResponse.json"));
 
         //act
-        List<Establishment> establishmentList = establishmentsResponseToEstablishments.apply(responseEntity);
+        Authority authority = authorityResponseToAuthority.apply(responseEntity);
 
         //assert
-        assertThat(establishmentList.size(),is(3));
+        assertThat(authority.getName(),is("Barnsley"));
+        assertThat(authority.getAuthorityId(),is(392));
     }
 
     @Test(expected = IllegalStateException.class)
-    public void shouldThrowIllegalStateExceptionIfEstablishmentsCannotBeRead() throws Exception {
+    public void shouldThrowIllegalStateExceptionIfAuthorityCannotBeRead() throws Exception {
         //arrange
         final ResponseEntity<String> responseEntity = mock(ResponseEntity.class);
         when(responseEntity.getBody()).thenReturn("{UNEXPECTED CONTENT}");
 
         //act
-        establishmentsResponseToEstablishments.apply(responseEntity);
+        authorityResponseToAuthority.apply(responseEntity);
 
         //assert
     }

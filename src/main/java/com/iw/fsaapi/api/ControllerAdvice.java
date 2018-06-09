@@ -31,4 +31,14 @@ class ControllerAdvice {
                 .body(objectMapper.createObjectNode().put("error",ex.getMessage()).toString());
     }
 
+    @ExceptionHandler(IllegalArgumentException.class)
+    ResponseEntity<String> handleIllegalArgumentException(final IllegalArgumentException ex) {
+        logger.error(ex.getMessage(),ex);
+        return ResponseEntity
+                .status(HttpStatus.BAD_REQUEST)
+                .contentType(MediaType.APPLICATION_JSON)
+                .body(objectMapper.createObjectNode().put("error",ex.getMessage()).toString());
+    }
+
+
 }

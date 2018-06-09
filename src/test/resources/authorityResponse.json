@@ -1,0 +1,22 @@
+{
+  "LocalAuthorityId": 392,
+  "LocalAuthorityIdCode": "401",
+  "Name": "Barnsley",
+  "FriendlyName": "barnsley",
+  "Url": "http://www.barnsley.gov.uk",
+  "SchemeUrl": "",
+  "Email": "regulatoryservices@barnsley.gov.uk",
+  "RegionName": "Yorkshire and Humberside",
+  "FileName": "http://ratings.food.gov.uk/OpenDataFiles/FHRS401en-GB.xml",
+  "FileNameWelsh": null,
+  "EstablishmentCount": 1836,
+  "CreationDate": "2010-08-17T15:30:24.87",
+  "LastPublishedDate": "2018-06-07T00:35:02.463",
+  "SchemeType": 1,
+  "links": [
+    {
+      "rel": "self",
+      "href": "http://api.ratings.food.gov.uk/authorities/392"
+    }
+  ]
+}

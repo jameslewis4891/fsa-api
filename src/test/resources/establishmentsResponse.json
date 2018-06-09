@@ -1,0 +1,147 @@
+{
+  "establishments": [
+    {
+      "FHRSID": 997205,
+      "LocalAuthorityBusinessID": "3363",
+      "BusinessName": "00 Bar",
+      "BusinessType": "Restaurant/Cafe/Canteen",
+      "BusinessTypeID": 1,
+      "AddressLine1": "",
+      "AddressLine2": "2-4 The Arcade",
+      "AddressLine3": "",
+      "AddressLine4": "Barnsley",
+      "PostCode": "S70 2QN",
+      "Phone": "",
+      "RatingValue": "5",
+      "RatingKey": "fhrs_5_en-gb",
+      "RatingDate": "2017-09-19T00:00:00",
+      "LocalAuthorityCode": "401",
+      "LocalAuthorityName": "Barnsley",
+      "LocalAuthorityWebSite": "http://www.barnsley.gov.uk",
+      "LocalAuthorityEmailAddress": "regulatoryservices@barnsley.gov.uk",
+      "scores": {
+        "Hygiene": 0,
+        "Structural": 0,
+        "ConfidenceInManagement": 5
+      },
+      "SchemeType": "FHRS",
+      "geocode": {
+        "longitude": "-1.48067700862885",
+        "latitude": "53.5534706115723"
+      },
+      "RightToReply": "",
+      "Distance": null,
+      "NewRatingPending": false,
+      "meta": {
+        "dataSource": null,
+        "extractDate": "0001-01-01T00:00:00",
+        "itemCount": 0,
+        "returncode": null,
+        "totalCount": 0,
+        "totalPages": 0,
+        "pageSize": 0,
+        "pageNumber": 0
+      },
+      "links": []
+    },
+    {
+      "FHRSID": 957921,
+      "LocalAuthorityBusinessID": "4511",
+      "BusinessName": "2 Unique",
+      "BusinessType": "Other catering premises",
+      "BusinessTypeID": 7841,
+      "AddressLine1": "",
+      "AddressLine2": "107 Brierley Road",
+      "AddressLine3": "",
+      "AddressLine4": "Grimethorpe",
+      "PostCode": "S72 7AD",
+      "Phone": "",
+      "RatingValue": "5",
+      "RatingKey": "fhrs_5_en-gb",
+      "RatingDate": "2017-03-23T00:00:00",
+      "LocalAuthorityCode": "401",
+      "LocalAuthorityName": "Barnsley",
+      "LocalAuthorityWebSite": "http://www.barnsley.gov.uk",
+      "LocalAuthorityEmailAddress": "regulatoryservices@barnsley.gov.uk",
+      "scores": {
+        "Hygiene": 5,
+        "Structural": 5,
+        "ConfidenceInManagement": 5
+      },
+      "SchemeType": "FHRS",
+      "geocode": {
+        "longitude": "-1.380204",
+        "latitude": "53.581682"
+      },
+      "RightToReply": "",
+      "Distance": null,
+      "NewRatingPending": false,
+      "meta": {
+        "dataSource": null,
+        "extractDate": "0001-01-01T00:00:00",
+        "itemCount": 0,
+        "returncode": null,
+        "totalCount": 0,
+        "totalPages": 0,
+        "pageSize": 0,
+        "pageNumber": 0
+      },
+      "links": []
+    },
+    {
+      "FHRSID": 397530,
+      "LocalAuthorityBusinessID": "1588",
+      "BusinessName": "Z A Akram Chemist",
+      "BusinessType": "Retailers - other",
+      "BusinessTypeID": 4613,
+      "AddressLine1": "",
+      "AddressLine2": "22 High Street",
+      "AddressLine3": "",
+      "AddressLine4": "Wombwell",
+      "PostCode": "S73 0AA",
+      "Phone": "",
+      "RatingValue": "Exempt",
+      "RatingKey": "fhrs_exempt_en-gb",
+      "RatingDate": "1901-01-01T00:00:00",
+      "LocalAuthorityCode": "401",
+      "LocalAuthorityName": "Barnsley",
+      "LocalAuthorityWebSite": "http://www.barnsley.gov.uk",
+      "LocalAuthorityEmailAddress": "regulatoryservices@barnsley.gov.uk",
+      "scores": {
+        "Hygiene": null,
+        "Structural": null,
+        "ConfidenceInManagement": null
+      },
+      "SchemeType": "FHRS",
+      "geocode": {
+        "longitude": "-1.39801",
+        "latitude": "53.522306"
+      },
+      "RightToReply": "",
+      "Distance": null,
+      "NewRatingPending": false,
+      "meta": {
+        "dataSource": null,
+        "extractDate": "0001-01-01T00:00:00",
+        "itemCount": 0,
+        "returncode": null,
+        "totalCount": 0,
+        "totalPages": 0,
+        "pageSize": 0,
+        "pageNumber": 0
+      },
+      "links": []
+    }
+  ],
+  "meta": {
+    "dataSource": "Lucene",
+    "extractDate": "0001-01-01T00:00:00",
+    "itemCount": 0,
+    "returncode": "OK",
+    "totalCount": 1836,
+    "totalPages": 1,
+    "pageSize": 5000,
+    "pageNumber": 1
+  },
+  "links": []
+}

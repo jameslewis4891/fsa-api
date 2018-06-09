@@ -25,21 +25,23 @@ public class EstablishmentsByAuthorityId implements Function<Integer,List<Establ
     private final EstablishmentsResponseToEstablishments establishmentsResponseToEstablishments;
     private final FSAConfiguration fsaConfiguration;
     private final RestTemplate restTemplate;
+    private final AuthoritySupplier authoritySupplier;
 
     @Autowired
     public EstablishmentsByAuthorityId(final EstablishmentsResponseToEstablishments establishmentsResponseToEstablishments,
                                        final FSAConfiguration fsaConfiguration,
-                                       final RestTemplate restTemplate) {
+                                       final RestTemplate restTemplate,
+                                       final AuthoritySupplier authoritySupplier) {
         this.establishmentsResponseToEstablishments = establishmentsResponseToEstablishments;
         this.fsaConfiguration = fsaConfiguration;
         this.restTemplate = restTemplate;
+        this.authoritySupplier = authoritySupplier;
     }
 
     @Override
     public List<Establishment> apply(final Integer authorityId) {
-        //TODO Implement
         logger.info("Getting establishments for authority {}",authorityId);
-        return establishmentsResponseToEstablishments.apply(executeRequest(authorityId));
+        return establishmentsResponseToEstablishments.apply(executeRequest(authoritySupplier.apply(authorityId).getAuthorityId()));
     }
 
     private ResponseEntity<String> executeRequest(final Integer authorityId) {
