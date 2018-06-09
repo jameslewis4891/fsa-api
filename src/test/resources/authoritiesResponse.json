@@ -1,0 +1,59 @@
+{
+  "authorities": [
+    {
+      "LocalAuthorityId": 197,
+      "LocalAuthorityIdCode": "760",
+      "Name": "Aberdeen City",
+      "EstablishmentCount": 1835,
+      "SchemeType": 2,
+      "links": [
+        {
+          "rel": "self",
+          "href": "http://api.ratings.food.gov.uk/authorities/197"
+        }
+      ]
+    },
+    {
+      "LocalAuthorityId": 198,
+      "LocalAuthorityIdCode": "761",
+      "Name": "Aberdeenshire",
+      "EstablishmentCount": 2143,
+      "SchemeType": 2,
+      "links": [
+        {
+          "rel": "self",
+          "href": "http://api.ratings.food.gov.uk/authorities/198"
+        }
+      ]
+    },
+    {
+      "LocalAuthorityId": 277,
+      "LocalAuthorityIdCode": "323",
+      "Name": "Adur",
+      "EstablishmentCount": 424,
+      "SchemeType": 1,
+      "links": [
+        {
+          "rel": "self",
+          "href": "http://api.ratings.food.gov.uk/authorities/277"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "dataSource": "API",
+    "extractDate": "2018-06-09T09:25:47.4422244+01:00",
+    "itemCount": 392,
+    "returncode": "OK",
+    "totalCount": 392,
+    "totalPages": 1,
+    "pageSize": 392,
+    "pageNumber": 1
+  },
+  "links": [
+    {
+      "rel": "self",
+      "href": "http://api.ratings.food.gov.uk/authorities"
+    }
+  ]
+}
