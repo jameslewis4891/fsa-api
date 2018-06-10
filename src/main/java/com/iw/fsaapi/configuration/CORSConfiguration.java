@@ -18,7 +18,7 @@ public class CORSConfiguration implements WebMvcConfigurer {
                 .exposedHeaders(EXPOSED_HEADERS)
                 .allowedHeaders(EXPOSED_HEADERS)
                 .maxAge(maxAge)
-                .allowedOrigins("http://localhost:4200");
+                .allowedOrigins("*");
     }
 
 }
